@@ -443,4 +443,49 @@ Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
 To https://github.com/josueahadi/gym-git-exercise-solutions.git
    5ec5407..46f111c  dev -> dev
 
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)      
+$ it commit -m "setup the home and about pag
+e"
+bash: it: command not found
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)      
+$ git commit -m "setup the home and about pa
+ge"
+[dev 5511f3f] setup the home and about page
+ 1 file changed, 11 insertions(+)
+ create mode 100644 about.html
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)      
+$ git status
+On branch dev
+Your branch is ahead of 'origin/dev' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        team.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)      
+$ git stash list
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)      
+$ git stash list
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)      
+$ git add team.html 
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)      
+$ git stash
+Saved working directory and index state WIP on dev: 5511f3f setup the home and about page
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)      
+$ git reset
+
 ```
