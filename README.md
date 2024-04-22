@@ -1890,3 +1890,175 @@ $ git checkout ft/home-page-redesign
 Switched to branch 'ft/home-page-redesign'
 Your branch is up to date with 'origin/ft/home-page-redesign'.
 ```
+
+### Exercise 2
+
+```bash
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (main)
+$ git checkout -b ft/footer
+Switched to a new branch 'ft/footer'
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/footer)
+$ git checkout main
+M       home.html
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (main)
+$ git checkout ft/squashing
+error: pathspec 'ft/squashing' did not match any file(s) known to git
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (main)
+$ git checkout -b  ft/squashing
+Switched to a new branch 'ft/squashing'
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/squashing)
+$ git checkout ft/footer 
+M       home.html
+Switched to branch 'ft/footer'
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/footer)
+$ git status
+On branch ft/footer
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   home.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/footer)
+$ git add --all
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/footer)
+$ git commit -m "feat: added a footer section"
+[ft/footer 7dee741] feat: added a footer section
+ 1 file changed, 6 insertions(+)
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/footer)
+$ git push
+fatal: The current branch ft/footer has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/footer
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/footer)
+$ git push --set-upstream origin ft/footer
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 404 bytes | 404.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote:      https://github.com/josueahadi/gym-git-exercise-solutions/pull/new/ft/footer
+remote:
+To https://github.com/josueahadi/gym-git-exercise-solutions.git
+ * [new branch]      ft/footer -> ft/footer
+branch 'ft/footer' set up to track 'origin/ft/footer'.
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/footer)
+$ git status
+On branch ft/footer
+Your branch is up to date with 'origin/ft/footer'.
+
+nothing to commit, working tree clean
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/footer)
+$ git checkout ft/squashing 
+Switched to branch 'ft/squashing'
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/squashing)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (main)
+$ git checkout ft/squashing 
+Switched to branch 'ft/squashing'
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/squashing)
+$ git merge ft/footer 
+Updating 3345411..7dee741
+Fast-forward
+ home.html | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/squashing)
+$ git log
+commit 7dee74176f34b33b590a4a92f1c62be30daafc26 (HEAD -> ft/squashing, origin/ft/footer, ft/footer)
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 17:06:49 2024 +0200
+
+    feat: added a footer section
+
+commit 33454114d34b18f51d05828bfbdc754d1c2ef972 (origin/main, git-copy/main, main)
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 16:47:38 2024 +0200
+
+    feat: more content added on the homepage
+
+commit 4ca3ef37d4bc6e6da75f0ec2ff7c4f646b28ced8
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 15:40:04 2024 +0200
+
+    feat: add home page contents
+
+commit 29590b1d1f51431bca01a5ef621421bacd0e6ae8 (ft/service-redesign)
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/squashing)
+$ git commit -m "footer changes squashing"
+On branch ft/squashing
+nothing to commit, working tree clean
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/squashing)
+$ git push
+fatal: The current branch ft/squashing has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/squashing
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/squashing)
+$ git push --set-upstream origin ft/squashing
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: 
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting:
+remote:      https://github.com/josueahadi/gym-git-exercise-solutions/pull/new/ft/squashing
+remote:
+To https://github.com/josueahadi/gym-git-exercise-solutions.git
+ * [new branch]      ft/squashing -> ft/squashing
+branch 'ft/squashing' set up to track 'origin/ft/squashing'.
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/squashing)
+$ git log
+commit 7dee74176f34b33b590a4a92f1c62be30daafc26 (HEAD -> ft/squashing, origin/ft/squashing, origin/ft/footer, ft/footer)
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 17:06:49 2024 +0200
+
+    feat: added a footer section
+
+commit 33454114d34b18f51d05828bfbdc754d1c2ef972 (origin/main, git-copy/main, main)
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 16:47:38 2024 +0200
+
+    feat: more content added on the homepage
+
+commit 4ca3ef37d4bc6e6da75f0ec2ff7c4f646b28ced8
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 15:40:04 2024 +0200
+
+    feat: add home page contents
+
+commit 29590b1d1f51431bca01a5ef621421bacd0e6ae8 (ft/service-redesign)
+:
+```
