@@ -193,7 +193,254 @@ Fast-forward
 ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)
 $ git branch -d test
 Deleted branch test (was 0cd0c61).
+```
+
+### Exercise 2
+
+```bash 
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)      
+$ git branch
+* dev
+  main
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)      
+$ git stash
+Saved working directory and index state WIP on dev: 5ec5407 new branches
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)      
+$ git status
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        home.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)      
+$ git stash
+No local changes to save
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)      
+$ git stash
+No local changes to save
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)      
+$ git status
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        about.html
+        home.html
+        team.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)      
+$ git add about.html 
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)      
+$ git status
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   about.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        home.html
+        team.html
 
 
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)      
+$ git stash
+Saved working directory and index state WIP on dev: 5ec5407 new branches
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)      
+$ git stash list
+stash@{0}: WIP on dev: 5ec5407 new branches
+stash@{1}: WIP on dev: 5ec5407 new branches 
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)      
+$ git add home.html 
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)      
+$ git stash
+Saved working directory and index state WIP on dev: 5ec5407 new branches
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)      
+$ git stash list
+stash@{0}: WIP on dev: 5ec5407 new branches
+stash@{1}: WIP on dev: 5ec5407 new branches 
+stash@{2}: WIP on dev: 5ec5407 new branches 
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)      
+$ git status
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        team.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)      
+$ git add team.html 
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)      
+$ git stash
+Saved working directory and index state WIP on dev: 5ec5407 new branches
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)      
+$ stash list
+bash: stash: command not found
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)      
+$ git stash list
+stash@{0}: WIP on dev: 5ec5407 new branches
+stash@{1}: WIP on dev: 5ec5407 new branches 
+stash@{2}: WIP on dev: 5ec5407 new branches 
+stash@{3}: WIP on dev: 5ec5407 new branches 
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)      
+$ git stash pop
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   team.html
+
+Dropped refs/stash@{0} (1f26605327b00e2f6dbc8e294da6120d3ce6a399)
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)      
+$ git add team.html 
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)      
+$ git stash
+Saved working directory and index state WIP on dev: 5ec5407 new branches
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)      
+$ git stash list
+stash@{0}: WIP on dev: 5ec5407 new branches
+stash@{1}: WIP on dev: 5ec5407 new branches 
+stash@{2}: WIP on dev: 5ec5407 new branches 
+stash@{3}: WIP on dev: 5ec5407 new branches 
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)      
+$ git stash pop stash@{2
+error: stash@{2 is not a valid reference
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)      
+$ git stash pop stash@{2}
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   about.html
+
+Dropped stash@{2} (aad68fe5dec372145d72ef5fea3d7ae1d3f5ac0d)
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)      
+$ git stash pop stash@{0}
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   about.html
+        new file:   team.html
+
+Dropped stash@{0} (15ef5f72322ca3c40bebee849eb189a7cb7bc7df)
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)      
+$ git add team.html 
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)      
+$ git stash 
+Saved working directory and index state WIP on dev: 5ec5407 new branches
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)      
+$ git stash pop restore
+error: restore is not a valid reference
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)      
+$ git stash pop stash@{2}
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Dropped stash@{2} (8c57c6fe931b0cba24cd33e8aa7a509eab41f409)
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)      
+$ git stash pop 
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   about.html
+        new file:   team.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+Dropped refs/stash@{0} (153dfa553f80bfc3f33e2df8b55e4d0d5c9180d9)
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)      
+$ git add team.html 
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)      
+$ git stash
+Saved working directory and index state WIP on dev: 5ec5407 new branches
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)      
+$ git stash pop stash@{1}
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   home.html
+
+Dropped stash@{1} (f3f3caf2eab00dd2dec3d9592f31519ee4f791f0)
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)      
+$ git status
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   home.html
+
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)      
+$ git commit -m "bringing back home with git
+ stash pop..."
+[dev 46f111c] bringing back home with git stash pop...
+ 1 file changed, 11 insertions(+)
+ create mode 100644 home.html
+
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 494 bytes | 494.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/josueahadi/gym-git-exercise-solutions.git
+   5ec5407..46f111c  dev -> dev
 
 ```
