@@ -531,10 +531,11 @@ remote:
 To https://github.com/josueahadi/gym-git-exercise-solutions.git
  * [new branch]      ft/bundle-2 -> ft/bundle-2
 branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
-
+```
 
 ### Exercise 2
 
+```bash
 ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (main)
 $ git pull
 Updating 8f50b86..9589149
@@ -556,4 +557,206 @@ Fast-forward
  services.html | 11 +++++++++++
  2 files changed, 47 insertions(+)
  create mode 100644 services.html
+
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (main) 
+$ git branch -b ft/service-redesign
+error: unknown switch `b'
+usage: git branch [<options>] [-r | -a] [--merged] [--no-merged]
+   or: git branch [<options>] [-f] [--recurse-submodules] <branch-name> [<start-point>]
+   or: git branch [<options>] [-l] [<pattern>...]
+   or: git branch [<options>] [-r] (-d | -D) <branch-name>...
+   or: git branch [<options>] (-m | -M) [<old-branch>] <new-branch>
+   or: git branch [<options>] (-c | -C) [<old-branch>] <new-branch>
+   or: git branch [<options>] [-r | -a] [--points-at]
+   or: git branch [<options>] [-r | -a] [--format]
+
+Generic options
+    -v, --[no-]verbose    show hash and subject, give twice for upstream branch     
+    -q, --[no-]quiet      suppress informational messages
+    -t, --[no-]track[=(direct|inherit)]
+                          set branch tracking configuration
+    -u, --[no-]set-upstream-to <upstream>
+                          change the upstream info
+    --[no-]unset-upstream unset the upstream info
+    --[no-]color[=<when>] use colored output
+    -r, --remotes         act on remote-tracking branches
+    --contains <commit>   print only branches that contain the commit
+    --no-contains <commit>
+                          print only branches that don't contain the commit
+    --[no-]abbrev[=<n>]   use <n> digits to display object names
+
+Specific git-branch actions:
+    -a, --all             list both remote-tracking and local branches
+    -d, --[no-]delete     delete fully merged branch
+    -D                    delete branch (even if not merged)
+    -m, --[no-]move       move/rename a branch and its reflog
+    -M                    move/rename a branch, even if target exists
+    --[no-]omit-empty     do not output a newline after empty formatted refs        
+    -c, --[no-]copy       copy a branch and its reflog
+    -C                    copy a branch, even if target exists
+    -l, --[no-]list       list branch names
+    --[no-]show-current   show current branch name
+    --[no-]create-reflog  create the branch's reflog
+    --[no-]edit-description
+                          edit the description for the branch
+    -f, --[no-]force      force creation, move/rename, deletion
+    --merged <commit>     print only branches that are merged
+    --no-merged <commit>  print only branches that are not merged
+    --[no-]column[=<style>]
+                          list branches in columns
+    --[no-]sort <key>     field name to sort on
+    --[no-]points-at <object>
+                          print only branches of the object
+    -i, --[no-]ignore-case
+                          sorting and filtering are case insensitive
+    --[no-]recurse-submodules
+                          recurse through submodules
+    --[no-]format <format>
+                          format to use for the output
+
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (main) 
+$ git branch -b ft/service-redesign
+error: unknown switch `b'
+usage: git branch [<options>] [-r | -a] [--merged] [--no-merged]
+   or: git branch [<options>] [-f] [--recurse-submodules] <branch-name> [<start-point>]
+   or: git branch [<options>] [-l] [<pattern>...]
+   or: git branch [<options>] [-r] (-d | -D) <branch-name>...
+   or: git branch [<options>] (-m | -M) [<old-branch>] <new-branch>
+   or: git branch [<options>] (-c | -C) [<old-branch>] <new-branch>
+   or: git branch [<options>] [-r | -a] [--points-at]
+   or: git branch [<options>] [-r | -a] [--format]
+
+Generic options
+    -v, --[no-]verbose    show hash and subject, give twice for upstream branch     
+    -q, --[no-]quiet      suppress informational messages
+    -t, --[no-]track[=(direct|inherit)]
+                          set branch tracking configuration
+    -u, --[no-]set-upstream-to <upstream>
+                          change the upstream info
+    --[no-]unset-upstream unset the upstream info
+    --[no-]color[=<when>] use colored output
+    -r, --remotes         act on remote-tracking branches
+    --contains <commit>   print only branches that contain the commit
+    --no-contains <commit>
+                          print only branches that don't contain the commit
+    --[no-]abbrev[=<n>]   use <n> digits to display object names
+
+Specific git-branch actions:
+    -a, --all             list both remote-tracking and local branches
+    -d, --[no-]delete     delete fully merged branch
+    -D                    delete branch (even if not merged)
+    -m, --[no-]move       move/rename a branch and its reflog
+    -M                    move/rename a branch, even if target exists
+    --[no-]omit-empty     do not output a newline after empty formatted refs        
+    -c, --[no-]copy       copy a branch and its reflog
+    -C                    copy a branch, even if target exists
+    -l, --[no-]list       list branch names
+    --[no-]show-current   show current branch name
+    --[no-]create-reflog  create the branch's reflog
+    --[no-]edit-description
+                          edit the description for the branch
+    -f, --[no-]force      force creation, move/rename, deletion
+    --merged <commit>     print only branches that are merged
+    --no-merged <commit>  print only branches that are not merged
+    --[no-]column[=<style>]
+                          list branches in columns
+    --[no-]sort <key>     field name to sort on
+    --[no-]points-at <object>
+                          print only branches of the object
+    -i, --[no-]ignore-case
+                          sorting and filtering are case insensitive
+    --[no-]recurse-submodules
+                          recurse through submodules
+    --[no-]format <format>
+                          format to use for the output
+
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (main) 
+$ git checkout -b ft/service-redesign
+Switched to a new branch 'ft/service-redesign'
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/service-redesign)
+$ git add .
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/service-redesign)
+$ git commit -m "new changes to the service.html file"
+[ft/service-redesign 796daae] new changes to the service.html file
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/service-redesign)
+$ git push
+fatal: The current branch ft/service-redesign has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/service-redesign
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/service-redesign)
+$ git push --set-upstream origin ft/service-redesign 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 316 bytes | 158.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/service-redesign' on GitHub by visiting:      
+remote:      https://github.com/josueahadi/gym-git-exercise-solutions/pull/new/ft/service-redesign
+remote:
+To https://github.com/josueahadi/gym-git-exercise-solutions.git
+ * [new branch]      ft/service-redesign -> ft/service-redesign
+branch 'ft/service-redesign' set up to track 'origin/ft/service-redesign'.
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/service-redesign)
+$ git diff
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/service-redesign)
+$ git branch main
+fatal: a branch named 'main' already exists
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/service-redesign)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (main) 
+$ git diff
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (main) 
+$ git diff index.html
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (main) 
+$ git diff service.html
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (main) 
+$ git checkout ft/service-redesign 
+Switched to branch 'ft/service-redesign'
+Your branch is up to date with 'origin/ft/service-redesign'.
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/service-redesign)
+$ git diff service.html
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/service-redesign)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (main) 
+$ git merge ft/service-redesign 
+Updating 37a6b9e..796daae
+Fast-forward
+ service.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (main) 
+$ git diff
+
+
+
 ```
