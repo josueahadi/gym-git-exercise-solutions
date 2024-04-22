@@ -760,3 +760,785 @@ $ git diff
 
 
 ```
+
+## BUNDLE 3
+
+### Exercise 1
+
+```bash 
+.com>
+Date:   Mon Apr 22 12:37:03 2024 +0100
+
+    Merge pull request #3 from josueahadi/ft/service-redesign
+
+    new changes to the service.html file
+
+commit 796daae0b278d15d0a5d02343a74995bb0f8ff30 (origin/ft/service-redesign)        
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 12:50:02 2024 +0200
+
+    new changes to the service.html file
+
+commit 37a6b9e063b55611b7af912ae7947c29197a535d
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 12:41:25 2024 +0200
+
+    new changes
+
+commit 13753ee82ea9d42a7045f94108666a2b8de6078c
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 12:38:59 2024 +0200
+
+    services.html -> service.html
+
+commit 3bc4bf7307e62d5536573650c479c50fda9426f5
+Merge: 9589149 4e419d7
+Author: Angekarara <99403587+Angekarara@users.noreply.github.com>
+Date:   Mon Apr 22 12:34:46 2024 +0200
+
+    Merge pull request #2 from josueahadi/ft/bundle-2
+
+    Ft/bundle 2
+
+commit 4e419d74f53e692619936198f39a4724b12335fc (origin/ft/bundle-2, ft/bundle-2)   
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 12:27:35 2024 +0200
+
+    new changes
+
+commit 01116ad8bad6b592f5c036c83036e89dd0c84d59
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 12:26:41 2024 +0200
+
+    create a new file services.html
+
+commit 9589149f032a1f29a85666f3049896909c40b938
+Merge: 8f50b86 96a5c5e
+Author: Angekarara <99403587+Angekarara@users.noreply.github.com>
+Date:   Mon Apr 22 12:23:26 2024 +0200
+
+    Merge pull request #1 from josueahadi/ft/bundle-2
+
+    Ft/bundle 2
+
+commit 96a5c5ef264687aa9be624797d9e33ecf956599a
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 12:12:58 2024 +0200
+
+    added services page
+
+commit 098504a720029053ed1087ebb89149766d911fe6 (origin/dev, dev)
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 11:58:08 2024 +0200
+
+    added terminal history for git stash
+
+commit 5511f3fe5a9bf5ca29e4f6b97cad550eaba85aa0
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 11:52:53 2024 +0200
+
+    setup the home and about page
+
+commit eb0e62fe3e51914b1403423f654bf8504944d347
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 11:46:24 2024 +0200
+
+    git stash terminal history
+
+commit 46f111c8dc9b6e20775c490c744900f0976c2bd1
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 11:43:57 2024 +0200
+
+    bringing back home with git stash pop...
+
+commit 5ec5407dbc5a3656d154c3878042aa9f324f191b
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 11:20:59 2024 +0200
+
+    new branches
+
+commit 0cd0c61db4d80d2ec055515583287af677754def
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 11:16:58 2024 +0200
+
+    new branches
+
+commit 8f50b86dd8446a3cd3bed2157415fde31dde571e
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 11:07:19 2024 +0200
+
+    refactor: git history for previous commit
+
+    new branches
+
+commit 8f50b86dd8446a3cd3bed2157415fde31dde571e
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 11:07:19 2024 +0200
+
+    refactor: git history for previous commit
+
+commit e024fd3478a2bb1d8ab2b51fcb0af67156e062be
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 10:53:45 2024 +0200
+
+...skipping...
+commit 74e348c6ac8be693b6374726057d9532e42f6486 (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 14:54:09 2024 +0200
+
+    fear: add team page
+
+commit 29590b1d1f51431bca01a5ef621421bacd0e6ae8 (origin/main, main, ft/service-redesign, ft/contact-page)
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 14:43:58 2024 +0200
+
+    conflict resolution
+
+commit d3217617a9327edd6060c80ddea687faf8680612
+Merge: a56ca8b 2b334de
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 14:12:13 2024 +0200
+
+    Merge branch 'main' of https://github.com/josueahadi/gym-git-exercise-solutions 
+
+commit a56ca8ba404c6df0712b9de037b55279e2c3ead8
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 14:11:44 2024 +0200
+
+    README updated for Bundle 2 Exercises
+
+commit 2b334de0e7b3ae5dcda052208dc73f3ffa0f8c59
+Merge: 37a6b9e 796daae
+Author: Habib Josue Ahadi <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 12:37:03 2024 +0100
+
+    Merge pull request #3 from josueahadi/ft/service-redesign
+
+    new changes to the service.html file
+
+commit 796daae0b278d15d0a5d02343a74995bb0f8ff30 (origin/ft/service-redesign)        
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 12:50:02 2024 +0200
+
+    new changes to the service.html file
+
+commit 37a6b9e063b55611b7af912ae7947c29197a535d
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 12:41:25 2024 +0200
+
+    new changes
+
+commit 13753ee82ea9d42a7045f94108666a2b8de6078c
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 12:38:59 2024 +0200
+
+    services.html -> service.html
+
+commit 3bc4bf7307e62d5536573650c479c50fda9426f5
+Merge: 9589149 4e419d7
+Author: Angekarara <99403587+Angekarara@users.noreply.github.com>
+Date:   Mon Apr 22 12:34:46 2024 +0200
+
+    Merge pull request #2 from josueahadi/ft/bundle-2
+
+    Ft/bundle 2
+
+commit 4e419d74f53e692619936198f39a4724b12335fc (origin/ft/bundle-2, ft/bundle-2)   
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 12:27:35 2024 +0200
+
+    new changes
+
+commit 01116ad8bad6b592f5c036c83036e89dd0c84d59
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 12:26:41 2024 +0200
+
+    create a new file services.html
+
+commit 9589149f032a1f29a85666f3049896909c40b938
+Merge: 8f50b86 96a5c5e
+Author: Angekarara <99403587+Angekarara@users.noreply.github.com>
+Date:   Mon Apr 22 12:23:26 2024 +0200
+
+    Merge pull request #1 from josueahadi/ft/bundle-2
+
+    Ft/bundle 2
+
+commit 96a5c5ef264687aa9be624797d9e33ecf956599a
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 12:12:58 2024 +0200
+
+    added services page
+
+commit 098504a720029053ed1087ebb89149766d911fe6 (origin/dev, dev)
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 11:58:08 2024 +0200
+
+    added terminal history for git stash
+
+commit 5511f3fe5a9bf5ca29e4f6b97cad550eaba85aa0
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 11:52:53 2024 +0200
+
+    setup the home and about page
+
+commit eb0e62fe3e51914b1403423f654bf8504944d347
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 11:46:24 2024 +0200
+
+    git stash terminal history
+
+commit 46f111c8dc9b6e20775c490c744900f0976c2bd1
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 11:43:57 2024 +0200
+
+    bringing back home with git stash pop...
+
+commit 5ec5407dbc5a3656d154c3878042aa9f324f191b
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 11:20:59 2024 +0200
+
+    new branches
+
+commit 0cd0c61db4d80d2ec055515583287af677754def
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 11:16:58 2024 +0200
+
+    new branches
+
+commit 8f50b86dd8446a3cd3bed2157415fde31dde571e
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 11:07:19 2024 +0200
+
+    refactor: git history for previous commit
+
+    new branches
+
+commit 8f50b86dd8446a3cd3bed2157415fde31dde571e
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 11:07:19 2024 +0200
+
+    refactor: git history for previous commit
+
+commit e024fd3478a2bb1d8ab2b51fcb0af67156e062be
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 10:53:45 2024 +0200
+
+...skipping...
+commit 74e348c6ac8be693b6374726057d9532e42f6486 (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 14:54:09 2024 +0200
+
+    fear: add team page
+
+commit 29590b1d1f51431bca01a5ef621421bacd0e6ae8 (origin/main, main, ft/service-redesign, ft/contact-page)
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 14:43:58 2024 +0200
+
+    conflict resolution
+
+commit d3217617a9327edd6060c80ddea687faf8680612
+Merge: a56ca8b 2b334de
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 14:12:13 2024 +0200
+
+    Merge branch 'main' of https://github.com/josueahadi/gym-git-exercise-solutions
+
+commit a56ca8ba404c6df0712b9de037b55279e2c3ead8
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 14:11:44 2024 +0200
+
+    README updated for Bundle 2 Exercises
+
+commit 2b334de0e7b3ae5dcda052208dc73f3ffa0f8c59
+Merge: 37a6b9e 796daae
+Author: Habib Josue Ahadi <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 12:37:03 2024 +0100
+
+    Merge pull request #3 from josueahadi/ft/service-redesign
+
+    new changes to the service.html file
+
+commit 796daae0b278d15d0a5d02343a74995bb0f8ff30 (origin/ft/service-redesign)
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 12:50:02 2024 +0200
+
+    new changes to the service.html file
+
+commit 37a6b9e063b55611b7af912ae7947c29197a535d
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 12:41:25 2024 +0200
+
+    new changes
+
+commit 13753ee82ea9d42a7045f94108666a2b8de6078c
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 12:38:59 2024 +0200
+
+    services.html -> service.html
+
+commit 3bc4bf7307e62d5536573650c479c50fda9426f5
+Merge: 9589149 4e419d7
+Author: Angekarara <99403587+Angekarara@users.noreply.github.com>
+Date:   Mon Apr 22 12:34:46 2024 +0200
+
+    Merge pull request #2 from josueahadi/ft/bundle-2
+
+    Ft/bundle 2
+
+commit 4e419d74f53e692619936198f39a4724b12335fc (origin/ft/bundle-2, ft/bundle-2)
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 12:27:35 2024 +0200
+
+    new changes
+
+commit 01116ad8bad6b592f5c036c83036e89dd0c84d59
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 12:26:41 2024 +0200
+
+    create a new file services.html
+
+commit 9589149f032a1f29a85666f3049896909c40b938
+Merge: 8f50b86 96a5c5e
+Author: Angekarara <99403587+Angekarara@users.noreply.github.com>
+Date:   Mon Apr 22 12:23:26 2024 +0200
+
+    Merge pull request #1 from josueahadi/ft/bundle-2
+
+    Ft/bundle 2
+
+commit 96a5c5ef264687aa9be624797d9e33ecf956599a
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 12:12:58 2024 +0200
+
+    added services page
+
+commit 098504a720029053ed1087ebb89149766d911fe6 (origin/dev, dev)
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 11:58:08 2024 +0200
+
+    added terminal history for git stash
+
+commit 5511f3fe5a9bf5ca29e4f6b97cad550eaba85aa0
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 11:52:53 2024 +0200
+
+    setup the home and about page
+
+commit eb0e62fe3e51914b1403423f654bf8504944d347
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 11:46:24 2024 +0200
+
+    git stash terminal history
+
+commit 46f111c8dc9b6e20775c490c744900f0976c2bd1
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 11:43:57 2024 +0200
+
+    bringing back home with git stash pop...
+
+commit 5ec5407dbc5a3656d154c3878042aa9f324f191b
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 11:20:59 2024 +0200
+
+    new branches
+
+commit 0cd0c61db4d80d2ec055515583287af677754def
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 11:16:58 2024 +0200
+
+    new branches
+
+commit 8f50b86dd8446a3cd3bed2157415fde31dde571e
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 11:07:19 2024 +0200
+
+    refactor: git history for previous commit
+
+    new branches
+
+commit 8f50b86dd8446a3cd3bed2157415fde31dde571e
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 11:07:19 2024 +0200
+
+    refactor: git history for previous commit
+
+commit e024fd3478a2bb1d8ab2b51fcb0af67156e062be
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 10:53:45 2024 +0200
+
+...skipping...
+commit 74e348c6ac8be693b6374726057d9532e42f6486 (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 14:54:09 2024 +0200
+
+    fear: add team page
+
+commit 29590b1d1f51431bca01a5ef621421bacd0e6ae8 (origin/main, main, ft/service-redesign, ft/contact-page)
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 14:43:58 2024 +0200
+
+    conflict resolution
+
+commit d3217617a9327edd6060c80ddea687faf8680612
+Merge: a56ca8b 2b334de
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 14:12:13 2024 +0200
+
+    Merge branch 'main' of https://github.com/josueahadi/gym-git-exercise-solutions
+
+commit a56ca8ba404c6df0712b9de037b55279e2c3ead8
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 14:11:44 2024 +0200
+
+    README updated for Bundle 2 Exercises
+
+commit 2b334de0e7b3ae5dcda052208dc73f3ffa0f8c59
+Merge: 37a6b9e 796daae
+Author: Habib Josue Ahadi <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 12:37:03 2024 +0100
+
+    Merge pull request #3 from josueahadi/ft/service-redesign
+
+    new changes to the service.html file
+
+commit 796daae0b278d15d0a5d02343a74995bb0f8ff30 (origin/ft/service-redesign)
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 12:50:02 2024 +0200
+
+    new changes to the service.html file
+
+commit 37a6b9e063b55611b7af912ae7947c29197a535d
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 12:41:25 2024 +0200
+
+    new changes
+
+commit 13753ee82ea9d42a7045f94108666a2b8de6078c
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 12:38:59 2024 +0200
+
+    services.html -> service.html
+
+commit 3bc4bf7307e62d5536573650c479c50fda9426f5
+Merge: 9589149 4e419d7
+Author: Angekarara <99403587+Angekarara@users.noreply.github.com>
+Date:   Mon Apr 22 12:34:46 2024 +0200
+
+    Merge pull request #2 from josueahadi/ft/bundle-2
+
+    Ft/bundle 2
+
+commit 4e419d74f53e692619936198f39a4724b12335fc (origin/ft/bundle-2, ft/bundle-2)
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 12:27:35 2024 +0200
+
+    new changes
+
+commit 01116ad8bad6b592f5c036c83036e89dd0c84d59
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 12:26:41 2024 +0200
+
+    create a new file services.html
+
+commit 9589149f032a1f29a85666f3049896909c40b938
+Merge: 8f50b86 96a5c5e
+Author: Angekarara <99403587+Angekarara@users.noreply.github.com>
+Date:   Mon Apr 22 12:23:26 2024 +0200
+
+    Merge pull request #1 from josueahadi/ft/bundle-2
+
+    Ft/bundle 2
+
+commit 96a5c5ef264687aa9be624797d9e33ecf956599a
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 12:12:58 2024 +0200
+
+    added services page
+
+commit 098504a720029053ed1087ebb89149766d911fe6 (origin/dev, dev)
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 11:58:08 2024 +0200
+
+    added terminal history for git stash
+
+commit 5511f3fe5a9bf5ca29e4f6b97cad550eaba85aa0
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 11:52:53 2024 +0200
+
+    setup the home and about page
+
+commit eb0e62fe3e51914b1403423f654bf8504944d347
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 11:46:24 2024 +0200
+
+    git stash terminal history
+
+commit 46f111c8dc9b6e20775c490c744900f0976c2bd1
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 11:43:57 2024 +0200
+
+    bringing back home with git stash pop...
+
+commit 5ec5407dbc5a3656d154c3878042aa9f324f191b
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 11:20:59 2024 +0200
+
+    new branches
+
+commit 0cd0c61db4d80d2ec055515583287af677754def
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 11:16:58 2024 +0200
+
+    new branches
+
+commit 8f50b86dd8446a3cd3bed2157415fde31dde571e
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 11:07:19 2024 +0200
+
+    refactor: git history for previous commit
+
+commit e024fd3478a2bb1d8ab2b51fcb0af67156e062be
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 10:53:45 2024 +0200
+
+    connected github repo with the project file
+
+commit a68ac663694d868206fd6c2d6f927fc87594c5b2
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 10:45:33 2024 +0200
+
+    initial commit
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/team-page)
+$ git checkout ft/contact-page 
+Switched to branch 'ft/contact-page'
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/contact-page)
+$ git cherry-pick 74e348c6ac8be693b6374726057d9532e42f6486
+[ft/contact-page 9528032] fear: add team page
+ Date: Mon Apr 22 14:54:09 2024 +0200       
+ 2 files changed, 12 insertions(+), 204 deletions(-)
+ create mode 100644 team.html
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/contact-page)
+$ git status
+On branch ft/contact-page
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        contact.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/contact-page)
+$ git add --all
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/contact-page)
+$ git status
+On branch ft/contact-page
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   contact.html
+
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/contact-page)
+$ git commit -m "feat: add contact page"
+[ft/contact-page 63ae83c] feat: add contact page
+ 1 file changed, 11 insertions(+)
+ create mode 100644 contact.html
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/contact-page)
+$ git status
+On branch ft/contact-page
+nothing to commit, working tree clean       
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/contact-page)
+$ git push
+fatal: The current branch ft/contact-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/contact-page
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/contact-page)
+$ git push --set-upstream origin ft/contact-page
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 12 threads    
+Compressing objects: 100% (7/7), done.      
+Writing objects: 100% (7/7), 902 bytes | 128.00 KiB/s, done.
+Total 7 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/contact-page' on GitHub by visiting:
+remote:      https://github.com/josueahadi/gym-git-exercise-solutions/pull/new/ft/contact-page
+remote:
+To https://github.com/josueahadi/gym-git-exercise-solutions.git
+ * [new branch]      ft/contact-page -> ft/contact-page
+branch 'ft/contact-page' set up to track 'origin/ft/contact-page'.
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/contact-page)
+$ git checkout -b ft/faq-page
+Switched to a new branch 'ft/faq-page'
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/faq-page)
+$ git commit -m "feat: add faq page"
+On branch ft/faq-page
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        faq.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/faq-page)
+$ git add --all
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/faq-page)
+$ git commit -m "feat: add faq page"
+[ft/faq-page 46f5c21] feat: add faq page
+ 1 file changed, 11 insertions(+)
+ create mode 100644 faq.html
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/faq-page)
+$ git push
+fatal: The current branch ft/faq-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/faq-page
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/faq-page)
+$ git push --set-upstream origin ft/faq-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads    
+Compressing objects: 100% (3/3), done.      
+Writing objects: 100% (3/3), 431 bytes | 107.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/faq-page' on GitHub by visiting:
+remote:      https://github.com/josueahadi/gym-git-exercise-solutions/pull/new/ft/faq-page
+remote:
+To https://github.com/josueahadi/gym-git-exercise-solutions.git
+ * [new branch]      ft/faq-page -> ft/faq-page
+commit 46f5c21750c35621eb4db356bf496437a0520964 (HEAD -> ft/faq-page, origin/ft/faq-page)
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 15:20:56 2024 +0200
+
+    feat: add faq page
+
+commit 63ae83cfe6e063dcf7fc0fa89fe7cd0f96d3042c (origin/ft/contact-page, ft/contact-page)
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 15:10:01 2024 +0200
+
+    feat: add contact page
+
+commit 95280329f3305bf8b9e1f5fcc1093bac3854d196
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 14:54:09 2024 +0200
+
+    fear: add team page
+
+commit 29590b1d1f51431bca01a5ef621421bacd0e6ae8 (origin/main, main, ft/service-redesign)
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 14:43:58 2024 +0200
+
+    conflict resolution
+
+commit d3217617a9327edd6060c80ddea687faf8680612
+Merge: a56ca8b 2b334de
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 14:12:13 2024 +0200
+
+    Merge branch 'main' of https://github.com/josueahadi/gym-git-exercise-solutions
+
+commit a56ca8ba404c6df0712b9de037b55279e2c3ead8
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 14:11:44 2024 +0200
+
+    README updated for Bundle 2 Exercises
+e)
+$ git revert 95280329f3305bf8b9e1f5fcc1093bac3854d196
+[ft/faq-page f430e63] Revert "fear: add team page"
+ 2 files changed, 204 insertions(+), 12 deletions(-)
+ delete mode 100644 team.html
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/faq-page)
+$ git status
+On branch ft/faq-page
+Your branch is ahead of 'origin/ft/faq-page' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/faq-page)
+$ git log
+commit f430e6317578a32ac1adf83033b8b0fc72c10c01 (HEAD -> ft/faq-page)
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 15:23:14 2024 +0200
+
+    Revert "fear: add team page"
+
+    This reverts commit 95280329f3305bf8b9e1f5fcc1093bac3854d196.
+
+commit 46f5c21750c35621eb4db356bf496437a0520964 (origin/ft/faq-page)
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 15:20:56 2024 +0200
+
+    feat: add faq page
+
+commit 63ae83cfe6e063dcf7fc0fa89fe7cd0f96d3042c (origin/ft/contact-page, ft/contact-page)
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 15:10:01 2024 +0200
+
+    feat: add contact page
+
+commit 95280329f3305bf8b9e1f5fcc1093bac3854d196
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 14:54:09 2024 +0200
+
+    fear: add team page
+
+commit 29590b1d1f51431bca01a5ef621421bacd0e6ae8 (origin/main, main, ft/service-redesign)
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 14:43:58 2024 +0200
+
+    conflict resolution
+
+commit d3217617a9327edd6060c80ddea687faf8680612
+Merge: a56ca8b 2b334de
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 14:12:13 2024 +0200
+
+    Merge branch 'main' of https://github.com/josueahadi/gym-git-exercise-solutions
+
+commit a56ca8ba404c6df0712b9de037b55279e2c3ead8
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 14:11:44 2024 +0200
+
+    README updated for Bundle 2 Exercises
+
+commit 2b334de0e7b3ae5dcda052208dc73f3ffa0f8c59
+Merge: 37a6b9e 796daae
+Author: Habib Josue Ahadi <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 12:37:03 2024 +0100
+
+    Merge pull request #3 from josueahadi/ft/service-redesign
+
+    new changes to the service.html file
+
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/faq-page)
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/josueahadi/gym-git-exercise-solutions.git
+   46f5c21..f430e63  ft/faq-page -> ft/faq-page
+
+```
