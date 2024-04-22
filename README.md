@@ -139,4 +139,61 @@ $ git branch
   main
 * test
 
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (test)
+$ git add .
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (test)
+$ git commit -m "new branches"
+[test 0cd0c61] new branches
+ 2 files changed, 61 insertions(+)
+ create mode 100644 index.html
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (test)
+$ git push -u origin main
+branch 'main' set up to track 'origin/main'.
+Everything up-to-date
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (test)
+$ git push
+fatal: The current branch test has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (test)
+$ git status
+On branch test
+nothing to commit, working tree clean
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (test)
+$ git checkout dev
+Switched to branch 'dev'
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)
+$ git status
+On branch dev
+nothing to commit, working tree clean
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)
+$ git branch -d test
+error: the branch 'test' is not fully merged
+hint: If you are sure you want to delete it, run 'git branch -D test'
+hint: Disable this message with "git config advice.forceDeleteBranch false"
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)
+$ git merge test
+Updating 8f50b86..0cd0c61
+Fast-forward
+ README.md  | 50 ++++++++++++++++++++++++++++++++++++++++++++++++++
+ index.html | 11 +++++++++++
+ 2 files changed, 61 insertions(+)
+ create mode 100644 index.html
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)
+$ git branch -d test
+Deleted branch test (was 0cd0c61).
+
+
+
 ```
