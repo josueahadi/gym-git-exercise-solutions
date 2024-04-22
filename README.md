@@ -489,3 +489,17 @@ ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (de
 $ git reset
 
 ```
+
+## BUNDLE 2
+
+### Exercise 1
+
+```bash
+
+```
+
+### Exercise 2
+
+```bash
+
+```
