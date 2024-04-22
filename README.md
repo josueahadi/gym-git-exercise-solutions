@@ -1540,5 +1540,285 @@ Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
 remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
 To https://github.com/josueahadi/gym-git-exercise-solutions.git
    46f5c21..f430e63  ft/faq-page -> ft/faq-page
+```
 
+### Exercise 2
+
+```bash
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/faq-page)
+$ git checkout -b ft/home-page-redesign
+Switched to a new branch 'ft/home-page-redesign'
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/home-page-redesign)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exerciOn branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (main)
+$ git add --all
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (main)
+$ git commit -m "feat: add home page contents"
+[main 4ca3ef3] feat: add home page contents
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 469 bytes | 117.00 KiB/s, done.    
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)   
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/josueahadi/gym-git-exercise-solutions.git 
+   29590b1..4ca3ef3  main -> main
+
+fatal: a branch named 'ft/home-page-redesign' already exists
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (main)
+$ git checkout ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/home-page-redesign)
+$ git log
+commit 8730d6fe86ff4e99b6b8db784db30200a12e235c (HEAD -> ft/home-page-redesign, origin/ft/faq-page, ft/faq-page)
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 15:33:16 2024 +0200
+
+    terminal history: git log, git revert
+
+commit f430e6317578a32ac1adf83033b8b0fc72c10c01
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 15:23:14 2024 +0200
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/home-page-redesign)
+$ git rebase main
+Successfully rebased and updated refs/heads/ft/home-page-redesign.
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/home-page-redesign)
+$ git log
+commit 82341db1fa97fcc23d79fd6012bffbdaf418f929 (HEAD -> ft/home-page-redesign)
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 15:33:16 2024 +0200
+
+    terminal history: git log, git revert
+
+commit ab8f3c07a961f9e94bbf41a16a7957d437d830b4
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 15:23:14 2024 +0200
+
+    Revert "fear: add team page"
+
+    This reverts commit 95280329f3305bf8b9e1f5fcc1093bac3854d196.
+
+commit 39a427d68fbd56a8b9e93d46961b3dfd027d1a57
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 15:20:56 2024 +0200
+
+    feat: add faq page
+
+commit af84c76f248e743c260a2fe4a3ed2f135e0ca1dc
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 15:10:01 2024 +0200
+
+    feat: add contact page
+
+commit 8deae00c5387d879de88a7c6db35823abb4730af
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/home-page-redesign)
+$ git status
+On branch ft/home-page-redesign
+nothing to commit, working tree clean
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/home-page-redesign)
+$ git add home.html 
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/home-page-redesign)
+$ git commit -m "feat: add menus"
+[ft/home-page-redesign 198191a] feat: add menus
+ 1 file changed, 5 insertions(+)
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/home-page-redesign)
+$ git push
+fatal: The current branch ft/home-page-redesign has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/home-page-redesign
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/home-page-redesign)
+$ git push --set-upstream origin ft/home-page-redesign
+Enumerating objects: 21, done.
+Counting objects: 100% (21/21), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (18/18), done.
+Writing objects: 100% (18/18), 4.44 KiB | 454.00 KiB/s, done.
+Total 18 (delta 10), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (10/10), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote:      https://github.com/josueahadi/gym-git-exercise-solutions/pull/new/ft/home-page-redesign
+remote:
+To https://github.com/josueahadi/gym-git-exercise-solutions.git
+ * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
+branch 'ft/home-page-redesign' set up to track 'origin/ft/home-page-redesign'.
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/home-page-redesign)
+$ git status
+On branch ft/home-page-redesign
+Your branch is up to date with 'origin/ft/home-page-redesign'.
+
+nothing to commit, working tree clean
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/home-page-redesign)
+$ git checkout ft/faq-page 
+Switched to branch 'ft/faq-page'
+Your branch is up to date with 'origin/ft/faq-page'.
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/faq-page)
+$ git log
+commit 8730d6fe86ff4e99b6b8db784db30200a12e235c (HEAD -> ft/faq-page, origin/ft/faq-page)
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 15:33:16 2024 +0200
+
+    terminal history: git log, git revert
+
+commit f430e6317578a32ac1adf83033b8b0fc72c10c01
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 15:23:14 2024 +0200
+
+    Revert "fear: add team page"
+
+    This reverts commit 95280329f3305bf8b9e1f5fcc1093bac3854d196.
+
+commit 46f5c21750c35621eb4db356bf496437a0520964
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 15:20:56 2024 +0200
+
+    feat: add faq page
+
+commit 63ae83cfe6e063dcf7fc0fa89fe7cd0f96d3042c (origin/ft/contact-page, ft/contact-page)
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 15:10:01 2024 +0200
+
+    feat: add contact page
+
+commit 95280329f3305bf8b9e1f5fcc1093bac3854d196
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 14:54:09 2024 +0200
+
+    fear: add team page
+
+commit 29590b1d1f51431bca01a5ef621421bacd0e6ae8 (ft/service-redesign)
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 14:43:58 2024 +0200
+
+    conflict resolution
+
+commit d3217617a9327edd6060c80ddea687faf8680612
+Merge: a56ca8b 2b334de
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 14:12:13 2024 +0200
+
+    Merge branch 'main' of https://github.com/josueahadi/gym-git-exercise-solutions
+
+commit a56ca8ba404c6df0712b9de037b55279e2c3ead8
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 14:11:44 2024 +0200
+
+    README updated for Bundle 2 Exercises
+
+commit 2b334de0e7b3ae5dcda052208dc73f3ffa0f8c59
+Merge: 37a6b9e 796daae
+Author: Habib Josue Ahadi <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 12:37:03 2024 +0100
+
+    Merge pull request #3 from josueahadi/ft/service-redesign
+
+    new changes to the service.html file
+
+commit 796daae0b278d15d0a5d02343a74995bb0f8ff30 (origin/ft/service-redesign)
+Author: Josue <ahadihjosue@gmail.com>
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/faq-page)
+$ git checkout -b ft/merge
+Switched to a new branch 'ft/merge'
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/merge)
+$ git status
+On branch ft/merge
+nothing to commit, working tree clean
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/merge)
+$ git merge main
+Merge made by the 'ort' strategy.
+ home.html | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/merge)
+$ git log
+commit 27e4539b6ce2842539be106f0f2765756e40e1b9 (HEAD -> ft/merge)
+Merge: 8730d6f 4ca3ef3
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 16:10:04 2024 +0200
+
+    Merge branch 'main' into ft/merge
+
+commit 4ca3ef37d4bc6e6da75f0ec2ff7c4f646b28ced8 (origin/main, main)
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 15:40:04 2024 +0200
+
+    feat: add home page contents
+
+commit 8730d6fe86ff4e99b6b8db784db30200a12e235c (origin/ft/faq-page, ft/faq-page)
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 15:33:16 2024 +0200
+
+    terminal history: git log, git revert
+
+commit f430e6317578a32ac1adf83033b8b0fc72c10c01
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/merge)
+$ git checkout ft/home-page-redesign 
+Switched to branch 'ft/home-page-redesign'
+Your branch is up to date with 'origin/ft/home-page-redesign'.
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/home-page-redesign)
+$ git log
+commit 198191a2b2b89aa9499e4f8ba768c189075da240 (HEAD -> ft/home-page-redesign, origin/ft/home-page-redesign)
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 15:57:58 2024 +0200
+
+    feat: add menus
+
+commit 82341db1fa97fcc23d79fd6012bffbdaf418f929
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 15:33:16 2024 +0200
+
+    terminal history: git log, git revert
+
+commit ab8f3c07a961f9e94bbf41a16a7957d437d830b4
+Author: Josue <ahadihjosue@gmail.com>
+Date:   Mon Apr 22 15:23:14 2024 +0200
+
+    Revert "fear: add team page"
+
+    This reverts commit 95280329f3305bf8b9e1f5fcc1093bac3854d196.
 ```
