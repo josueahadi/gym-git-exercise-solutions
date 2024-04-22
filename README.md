@@ -495,12 +495,6 @@ $ git reset
 ### Exercise 1
 
 ```bash
-
-```
-
-### Exercise 2
-
-```bash
 ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)
 $ git checkout -b ft/bundle-2
 Switched to a new branch 'ft/bundle-2'
@@ -537,5 +531,33 @@ remote:
 To https://github.com/josueahadi/gym-git-exercise-solutions.git
  * [new branch]      ft/bundle-2 -> ft/bundle-2
 branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
+
+
+### Exercise 2
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (main)
+$ git pull
+Updating 8f50b86..9589149
+Fast-forward
+ README.md  | 413 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ about.html |  11 ++
+ home.html  |  11 ++
+ index.html |  11 ++
+ 4 files changed, 446 insertions(+)
+ create mode 100644 about.html
+ create mode 100644 home.html
+ create mode 100644 index.html
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (main)     
+$ git pull
+Updating 9589149..3bc4bf7
+Fast-forward
+ README.md     | 36 ++++++++++++++++++++++++++++++++++++
+ services.html | 11 +++++++++++
+ 2 files changed, 47 insertions(+)
+ create mode 100644 services.html
+
+
+
 
 ```
