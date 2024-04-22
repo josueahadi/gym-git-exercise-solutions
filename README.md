@@ -2062,3 +2062,304 @@ Date:   Mon Apr 22 15:40:04 2024 +0200
 commit 29590b1d1f51431bca01a5ef621421bacd0e6ae8 (ft/service-redesign)
 :
 ```
+
+## BUNDLE 5
+
+### Exerccise 2
+
+```bash
+$ clone https://github.com/josueahadi/git-cafe-exercise.git
+$ cd git-cafe-exercise/
+$ code .
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/git-cafe-exercise (main)
+$ git add --all
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/git-cafe-exercise (main)
+$ git status 
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/git-cafe-exercise (main)
+$ git commit -m "feat: changed the main title"
+[main 3a70cca] feat: changed the main title
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/git-cafe-exercise (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 322 bytes | 322.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/josueahadi/git-cafe-exercise.git
+   d1d3f9c..3a70cca  main -> main
+
+```
+
+## BUNDLE 6
+
+### Exercise 1
+
+```bash 
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/git-cafe-exercise (main)
+$ git checkout -b ft/menu
+Switched to a new branch 'ft/menu'
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/git-cafe-exercise (ft/menu)
+$ git status
+On branch ft/menu
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index-3.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/git-cafe-exercise (ft/menu)
+$ git add --all
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/git-cafe-exercise (ft/menu)
+$ git commit -m "feat: rename menu items"
+[ft/menu b55cfb4] feat: rename menu items
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/git-cafe-exercise (ft/menu)
+$ git push
+fatal: The current branch ft/menu has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/menu
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/git-cafe-exercise (ft/menu)
+$ git push --set-upstream origin ft/menu
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 469 bytes | 234.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/menu' on GitHub by visiting:
+remote:      https://github.com/josueahadi/git-cafe-exercise/pull/new/ft/menu
+remote:
+To https://github.com/josueahadi/git-cafe-exercise.git
+ * [new branch]      ft/menu -> ft/menu
+branch 'ft/menu' set up to track 'origin/ft/menu'.
+```
+
+### Exercise 2
+
+```bash
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/git-cafe-exercise (main)
+$ git checkout -b ft/menu
+Switched to a new branch 'ft/menu'
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/git-cafe-exercise (ft/menu)
+$ git status
+On branch ft/menu
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index-3.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/git-cafe-exercise (ft/menu)
+$ git add --all
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/git-cafe-exercise (ft/menu)
+$ git commit -m "feat: rename menu items"
+[ft/menu b55cfb4] feat: rename menu items
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/git-cafe-exercise (ft/menu)
+$ git push
+fatal: The current branch ft/menu has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/menu
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/git-cafe-exercise (ft/menu)
+$ git push --set-upstream origin ft/menu
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 469 bytes | 234.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/menu' on GitHub by visiting:
+remote:      https://github.com/josueahadi/git-cafe-exercise/pull/new/ft/menu
+remote:
+To https://github.com/josueahadi/git-cafe-exercise.git
+ * [new branch]      ft/menu -> ft/menu
+branch 'ft/menu' set up to track 'origin/ft/menu'.
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/git-cafe-exercise (ft/menu)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/git-cafe-exercise (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/git-cafe-exercise (main)
+$ git checkout -b ft/bug-fix
+Switched to a new branch 'ft/bug-fix'
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/git-cafe-exercise (ft/bug-fix)      
+$ git add --all
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/git-cafe-exercise (ft/bug-fix)      
+$ git commit -m "feature: rename index-4.html page title"
+[ft/bug-fix 4f6d115] feature: rename index-4.html page title
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/git-cafe-exercise (ft/bug-fix)      
+$ git push
+fatal: The current branch ft/bug-fix has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/bug-fix
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/git-cafe-exercise (ft/bug-fix)      
+$ git push --set-upstream origin ft/bug-fix
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 335 bytes | 83.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/bug-fix' on GitHub by visiting:
+remote:      https://github.com/josueahadi/git-cafe-exercise/pull/new/ft/bug-fix      
+remote:
+To https://github.com/josueahadi/git-cafe-exercise.git
+ * [new branch]      ft/bug-fix -> ft/bug-fix
+branch 'ft/bug-fix' set up to track 'origin/ft/bug-fix'.
+
+```
+
+### Exericse 3
+```bash
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/git-cafe-exercise (ft/bug-fix)      
+$ git status
+On branch ft/bug-fix
+Your branch is up to date with 'origin/ft/bug-fix'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/git-cafe-exercise (ft/bug-fix)      
+$ git add --all
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/git-cafe-exercise (ft/bug-fix)      
+$ git commit -m "feat: change the title"
+[ft/bug-fix 967aa2c] feat: change the title
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/git-cafe-exercise (ft/bug-fix)      
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 299 bytes | 149.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/josueahadi/git-cafe-exercise.git
+   4f6d115..967aa2c  ft/bug-fix -> ft/bug-fix
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/git-cafe-exercise (ft/bug-fix)      
+$ git status
+On branch ft/bug-fix
+Your branch is up to date with 'origin/ft/bug-fix'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index-4.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/git-cafe-exercise (ft/bug-fix)      
+$ git diff
+diff --git a/index-4.html b/index-4.html
+index e496949..57eeb79 100644
+--- a/index-4.html
++++ b/index-4.html
+@@ -170,7 +170,7 @@
+                         <address class="address-2">
+                             <div class="address_container"><p>The Company Name Inc. 9870 St Vincent Place, Glasgow, DC 45 Fr 45.</p></div>
+                             <dl>
+-                                <dt>Telphone:</dt> <dd>+1 800 603 6035</dd><br>      
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/git-cafe-exercise (ft/bug-fix)      
+$ git commit -m "bugfix: small hot fix on the telephone number"
+On branch ft/bug-fix
+Your branch is up to date with 'origin/ft/bug-fix'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index-4.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/git-cafe-exercise (ft/bug-fix)      
+$ git add --all
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/git-cafe-exercise (ft/bug-fix)      
+$ git commit -m "bugfix: small hot fix on the telephone number"
+[ft/bug-fix 94bfad5] bugfix: small hot fix on the telephone number
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/git-cafe-exercise (ft/bug-fix)      
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 312 bytes | 312.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/josueahadi/git-cafe-exercise.git
+   967aa2c..94bfad5  ft/bug-fix -> ft/bug-fix
+```
+
+### Exercise 4
+
+```bash
+
+```
