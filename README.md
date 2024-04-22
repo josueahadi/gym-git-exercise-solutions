@@ -1822,3 +1822,71 @@ Date:   Mon Apr 22 15:23:14 2024 +0200
 
     This reverts commit 95280329f3305bf8b9e1f5fcc1093bac3854d196.
 ```
+
+## BUNDLE 4
+
+### Exercise 1
+
+```bash
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/home-page-redesign)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (main)
+$ git remote add git-copy https://github.com/josueahadi/git-exercises.git
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (main)
+$ git remote
+git-copy
+origin
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   home.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (main)
+$ git add home.html 
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (main)
+$ git commit -m "feat: more content added on the homepage"
+[main 3345411] feat: more content added on the homepage
+ 1 file changed, 3 insertions(+)
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (main)
+$ git push origin
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 333 bytes | 333.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/josueahadi/gym-git-exercise-solutions.git
+   4ca3ef3..3345411  main -> main
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (main)
+$ git push git-copy
+Enumerating objects: 62, done.
+Counting objects: 100% (62/62), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (59/59), done.
+Writing objects: 100% (62/62), 12.17 KiB | 593.00 KiB/s, done.
+Total 62 (delta 25), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (25/25), done.
+To https://github.com/josueahadi/git-exercises.git
+ * [new branch]      main -> main
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (main)
+$ git checkout ft/home-page-redesign 
+Switched to branch 'ft/home-page-redesign'
+Your branch is up to date with 'origin/ft/home-page-redesign'.
+```
