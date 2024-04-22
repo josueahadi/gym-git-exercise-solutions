@@ -87,6 +87,56 @@ Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
 To https://github.com/josueahadi/gym-git-exercise-solutions.git
    a68ac66..e024fd3  main -> main
 
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (main)
+$ git add .
 
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (main)
+$ git commit "refactor: git history for previous commit"
+error: pathspec 'refactor: git history for previous commit' did not match any file(s) known to git
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (main)
+[main 8f50b86] refactor: git history for previous commit
+ 1 file changed, 32 insertions(+), 2 deletions(-)
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 658 bytes | 658.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/josueahadi/gym-git-exercise-solutions.git
+   e024fd3..8f50b86  main -> main
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (main)
+$ git checkout -b dev
+Switched to a new branch 'dev'
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)
+$ git branch
+* dev
+  main
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)
+$ git checkout -b test
+Switched to a new branch 'test'
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (test)
+$ git branch
+  dev
+  main
+* test
 
 ```
