@@ -501,5 +501,41 @@ $ git reset
 ### Exercise 2
 
 ```bash
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (dev)
+$ git checkout -b ft/bundle-2
+Switched to a new branch 'ft/bundle-2'
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/bundle-2)
+$ git add .
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/bundle-2)
+$ git commit -m "added services page"
+[ft/bundle-2 96a5c5e] added services page
+ 1 file changed, 14 insertions(+)
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/bundle-2)
+$ git push
+fatal: The current branch ft/bundle-2 has no upstream branch.
+To push the current branch and set the remote as upstream, use   
+
+    git push --set-upstream origin ft/bundle-2
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.       
+
+
+ahadi@windows MINGW64 ~/OneDrive/Desktop/PROJECTS/gym-git-exercise-solutions (ft/bundle-2)
+$ git push --set-upstream origin ft/bundle-2 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 395 bytes | 131.00 KiB/s, done.     
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)    
+git-exercise-solutions/pull/new/ft/bundle-2
+remote:
+To https://github.com/josueahadi/gym-git-exercise-solutions.git
+ * [new branch]      ft/bundle-2 -> ft/bundle-2
+branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
 
 ```
